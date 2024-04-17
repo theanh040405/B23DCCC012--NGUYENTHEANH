@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alarm Clock</title>
+<link rel="stylesheet" href="2.css">
+</head>
+<body>
+<div class="khungdh">
+    <div class="tg" id="timer">
+        00:00
+    </div>
+    <div>
+        <button class="nut1" onclick="startTimer()">start</button>
+        <button class="nut2" onclick="resetTimer()">restart</button>
+    </div>
+</div>
+<div id="controls">
+    <input class="aaa" type="number" id="minutes" min="0" max="59" placeholder="Phút">
+    <input class="aaa" type="number" id="seconds" min="0" max="59" placeholder="Giây">
+</div>       
+<audio id="alarmSound">
+    <source src="tiengchuong.mp3">
+  </audio>
+<script src="2.js"></script>
+</body>
+</html>
